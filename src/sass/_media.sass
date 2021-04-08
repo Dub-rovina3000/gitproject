@@ -70,6 +70,44 @@
                 width: 20px
                 height: auto
 
+    .catalog
+        &-item
+            width: 275px
+            min-height: 430px
+            &__img
+                height: 190px
+            &__subtitle
+                font-size: 15px
+            &__descr
+                font-size: 13px
+            &__price
+                font-size: 18px
+    .footer
+        min-height: 500px
+        &__info
+            width: 370px
+            height: 210px
+            padding: 48px 58px 60px 58px
+        &__addr
+            font-size: 15px
+            margin-bottom: 22px
+        &__phone
+            font-size: 18px
+            margin-bottom: 30px
+        &__social
+            width: 200px
+            &-item
+                width: 40px
+                height: 40px
+                img
+                    height: 20px
+        &__map
+            height: 500px
+            script
+                height: 500px
+
+
+
 @media (max-width: 992px)
     .container
         max-width: 690px
@@ -211,6 +249,29 @@
             height: 40px
             font-size: 12px
 
+    .carousel
+        &__inner
+            img
+                height: 214px
+        .slick-dots
+            margin: 0
+            padding: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            list-style-type: none
+            li
+                margin: 15px
+                button
+                    border: none
+                    border-radius: 100%
+                    width: 15px
+                    height: 15px
+                    background-color: $main-color
+                    color: rgba(0,0,0,0)
+                    &:focus
+                        outline: none
+
 
 @media (max-width: 576px)
     .container
@@ -289,5 +350,15 @@
         margin: 0 auto
         margin-top: 30px
 
+    .carousel
+        &__inner
+            img
+                width: 99%
+                height: auto         
+                
+        .slick-dots
+            li
+                margin: 40px 20px
 
-  
+
+   
